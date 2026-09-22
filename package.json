@@ -1,0 +1,61 @@
+{
+  "name": "opencode-go-usage-tui",
+  "version": "2.0.0",
+  "description": "OpenCode TUI plugin: local session usage statistics (tokens & requests by time window)",
+  "type": "module",
+  "exports": {
+    "./tui": {
+      "import": "./dist/tui.js"
+    }
+  },
+  "config": {
+    "enabled": true
+  },
+  "files": [
+    "dist",
+    "src",
+    "build.tui.mjs",
+    "README.md",
+    "README_EN.md",
+    "CHANGELOG.md",
+    "CHANGELOG_EN.md"
+  ],
+  "scripts": {
+    "build": "node build.tui.mjs",
+    "version": "node -e \"const fs=require('fs');const p=JSON.parse(fs.readFileSync('package.json','utf8'));console.log(p.version)\""
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "tui",
+    "usage",
+    "statistics",
+    "session",
+    "tokens"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zy637675/opencode-go-usage-tui"
+  },
+  "homepage": "https://github.com/zy637675/opencode-go-usage-tui",
+  "license": "MIT",
+  "peerDependencies": {
+    "@opencode/plugin": "^2.0.12",
+    "@opentui/core": ">=0.5.10",
+    "@opentui/solid": ">=0.5.10",
+    "solid-js": ">=1.9.0"
+  },
+  "devDependencies": {
+    "@opencode/plugin": "2.0.12",
+    "@opencode/theme": "2.0.12",
+    "@types/node": "^26.6.2",
+    "esbuild": "^0.25.0",
+    "esbuild-plugin-solid": "^0.5.0",
+    "typescript": "^5.9.3"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true,
+    "protobufjs@7.6.6": true,
+    "msgpackr-extract@3.0.4": true
+  }
+}
