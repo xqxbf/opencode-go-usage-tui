@@ -17,7 +17,7 @@ An OpenCode TUI plugin that shows **your own real session usage** in the sidebar
 Install from GitHub (no npm publish needed):
 
 ```bash
-git clone https://github.com/zy637675/opencode-go-usage-tui.git
+git clone https://github.com/xqxbf/opencode-go-usage-tui.git
 cd opencode-go-usage-tui
 npm install
 npm run build
@@ -52,4 +52,4 @@ See [CHANGELOG_EN.md](./CHANGELOG_EN.md).
 
 ## License
 
-[MIT](./LICENSE) © zy637675
+[MIT](./LICENSE) © xqxbf

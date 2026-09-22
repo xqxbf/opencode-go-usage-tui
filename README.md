@@ -17,7 +17,7 @@ OpenCode TUI 插件：在侧边栏实时统计**你自己实际使用的**会话
 从 GitHub 安装（无需发布到 npm）：
 
 ```bash
-git clone https://github.com/zy637675/opencode-go-usage-tui.git
+git clone https://github.com/xqxbf/opencode-go-usage-tui.git
 cd opencode-go-usage-tui
 npm install
 npm run build
@@ -52,4 +52,4 @@ npx tsc --noEmit  # 类型检查
 
 ## License
 
-[MIT](./LICENSE) © zy637675
+[MIT](./LICENSE) © xqxbf
